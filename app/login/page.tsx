@@ -51,7 +51,7 @@ export default function LoginPage() {
               <span className="text-secondary">MAGIC</span>
               <span className="text-primary">MARKET</span>
             </h1>
-            <p className="mt-2 text-sm text-muted-foreground">Acceso limitado</p>
+            <p className="mt-2 text-sm text-muted-foreground">Acceso restringido</p>
           </div>
 
           <form onSubmit={handleLogin} className="mt-8 space-y-6">
