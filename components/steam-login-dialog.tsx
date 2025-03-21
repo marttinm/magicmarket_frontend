@@ -1,6 +1,6 @@
 "use client"
 
-import { Dialog, DialogContent } from "@/components/ui/dialog"
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
@@ -32,11 +32,11 @@ export function SteamLoginDialog({ open, onOpenChange }: SteamLoginDialogProps) 
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-md bg-background border-primary">
         <div className="space-y-6">
-          <h2 className="text-2xl font-bold text-center">INICIO DE SESIÓN CON STEAM</h2>
+          <DialogTitle className="text-2xl font-bold text-center">INICIO DE SESIÓN CON STEAM</DialogTitle>
 
-          <p className="text-center text-sm text-muted-foreground">
+          <DialogDescription className="text-center text-sm text-muted-foreground">
             Acepta los términos y haz clic en el botón de abajo para iniciar sesión a través de Steam.
-          </p>
+          </DialogDescription>
 
           <div className="space-y-4">
             <div className="flex items-start space-x-2">
@@ -86,4 +86,3 @@ export function SteamLoginDialog({ open, onOpenChange }: SteamLoginDialogProps) 
     </Dialog>
   )
 }
-
